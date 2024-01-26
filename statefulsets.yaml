@@ -107,7 +107,7 @@ spec:
           volumeMounts:
             - name: dshm
               mountPath: /dev/shm
-            - name: postgres-data
+            - name: radarr-postgres-data
               mountPath: /postgres
       volumes:
         - name: dshm
