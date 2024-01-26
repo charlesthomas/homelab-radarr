@@ -39,7 +39,7 @@ spec:
         imagePullPolicy: IfNotPresent
         ports:
         - name: radarr
-          containerPort: 8989
+          containerPort: 7878
         env:
         - name: PUID
           value: "1000"
