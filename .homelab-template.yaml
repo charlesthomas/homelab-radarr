@@ -1,0 +1,23 @@
+_commit: v1.1.2-8-g0945ce2
+_src_path: /Users/crthomas/code/charlesthomas/homelab-template
+additionalResources: ''
+backups: false
+helm: false
+ingress: false
+labels: ''
+name: radarr
+namespace: radarr
+pvc: false
+resources:
+- backups.yaml
+- deployments.yaml
+- external-secrets.yaml
+- ingresses.yaml
+- pvcs.yaml
+- service-accounts.yaml
+- services.yaml
+- statefulsets.yaml
+service: false
+serviceAccount: false
+upstreamURL: https://radarr.video/
+url: https://github.com/charlesthomas/homelab-radarr
