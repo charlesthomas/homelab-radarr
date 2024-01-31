@@ -1,13 +1,26 @@
-_commit: v1.1.2-8-g0945ce2
+_commit: v1.1.2-16-gfaa6885
 _src_path: /Users/crthomas/code/charlesthomas/homelab-template
 additionalResources: ''
 backups: false
 helm: false
-ingress: false
+homepageDescription: Movie Finder
+homepageEnabled: true
+homepageGroup: Media
+homepageIcon: radarr
+homepageName: Radarr
+ingClass: nginx-crt-house
+ingExtraAnnotations: ''
+ingHost: radarr.crt.house
+ingName: radarr
+ingPathType: Prefix
+ingSecret: ''
+ingWebSockets: true
+ingress: true
 labels: ''
 name: radarr
 namespace: radarr
 pvc: false
+reloader: true
 resources:
 - backups.yaml
 - deployments.yaml
@@ -19,5 +32,7 @@ resources:
 - statefulsets.yaml
 service: false
 serviceAccount: false
+svcName: radarr
+svcPortNum: 7878
 upstreamURL: https://radarr.video/
 url: https://github.com/charlesthomas/homelab-radarr

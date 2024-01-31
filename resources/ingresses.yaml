@@ -1,0 +1,32 @@
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: radarr
+  annotations:
+    external-dns.alpha.kubernetes.io/hostname: radarr.crt.house
+    external-dns.alpha.kubernetes.io/target: 
+    nginx.org/websocket-services: radarr
+    gethomepage.dev/href: https://radarr.crt.house
+    gethomepage.dev/enabled: "true"
+    gethomepage.dev/description: Movie Finder
+    gethomepage.dev/group: Media
+    gethomepage.dev/icon: radarr
+    gethomepage.dev/name: Radarr
+    gethomepage.dev/pod-selector: ""
+spec:
+  ingressClassName: nginx-crt-house
+  rules:
+    - host: "radarr.crt.house"
+      http:
+        paths:
+          - path: "/"
+            pathType: Prefix
+            backend:
+              service:
+                name: radarr
+                port:
+                  number: 7878
+  tls:
+    - hosts:
+      - radarr.crt.house
