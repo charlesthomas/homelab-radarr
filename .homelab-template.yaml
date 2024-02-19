@@ -1,4 +1,4 @@
-_commit: v1.1.2-16-gfaa6885
+_commit: v1.5.0
 _src_path: /Users/crthomas/code/charlesthomas/homelab-template
 additionalResources: ''
 backups: false
@@ -9,8 +9,8 @@ homepageGroup: Media
 homepageIcon: radarr
 homepageName: Radarr
 ingClass: nginx-crt-house
-ingExtraAnnotations: ''
 ingCname: ''
+ingExtraAnnotations: ''
 ingHost: radarr.crt.house
 ingName: radarr
 ingPathType: Prefix
