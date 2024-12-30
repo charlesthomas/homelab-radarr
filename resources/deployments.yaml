@@ -36,7 +36,7 @@ spec:
           - /config/config.xml
       containers:
       - name: radarr
-        image: ghcr.io/linuxserver/radarr:5.16.3.9541-ls251
+        image: ghcr.io/linuxserver/radarr:5.16.3.9541-ls252
         imagePullPolicy: IfNotPresent
         ports:
         - name: radarr
