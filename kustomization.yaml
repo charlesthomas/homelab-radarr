@@ -15,6 +15,14 @@ resources:
 - resources/service-accounts.yaml
 - resources/services.yaml
 - resources/statefulsets.yaml
+
+images:
+  - name: postgres
+    newTag: "14.15"
+  - name: radarr
+    newName: ghcr.io/linuxserver/radarr
+    newTag: 5.17.2.9580-ls253
+
 patches:
 - patch: |-
     apiVersion: apps/v1
