@@ -60,7 +60,7 @@ spec:
           mountPath: /mnt/movies
         resources:
           limits:
-            memory: 700Mi
+            memory: 1Gi
           requests:
             memory: 350Mi
         readinessProbe:
