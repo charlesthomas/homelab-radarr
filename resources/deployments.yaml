@@ -54,9 +54,7 @@ spec:
           mountPath: /config
         - name: media
           mountPath: /mnt/media
-        resources:
-          limits:
-            memory: 1Gi
+        resources: {}
         readinessProbe:
           tcpSocket:
             port: radarr
