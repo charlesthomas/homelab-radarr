@@ -21,7 +21,7 @@ images:
     newTag: "14.15"
   - name: radarr
     newName: ghcr.io/linuxserver/radarr
-    newTag: 5.28.0.10274-ls286
+    newTag: 6.0.4.10291-ls288
 
 patches:
 - patch: |-
