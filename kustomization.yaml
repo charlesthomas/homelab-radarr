@@ -60,3 +60,11 @@ patches:
         gethomepage.dev/pod-selector: ""
   target:
     kind: Ingress
+configMapGenerator:
+- name: grafana-dashboard-radarr
+  files:
+  - grafana/radarr.json
+  options:
+    disableNameSuffixHash: true
+    labels:
+      grafana_dashboard: "1"
